@@ -1,0 +1,87 @@
+@import './_mixins.scss';
+
+.guestbookSection {
+  @include section-styles;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.guestbookForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2rem;
+
+  .formGroup {
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+  }
+
+  button {
+    align-self: flex-end;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+}
+
+.guestbookList {
+  border-top: 2px solid #eee;
+  padding-top: 1rem;
+}
+
+.guestbookEntry {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.entryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.entryName {
+  font-weight: bold;
+}
+
+.entryDate {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.entryMessage {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}

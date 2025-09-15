@@ -1,0 +1,80 @@
+@import './_mixins.scss';
+
+.locationSection {
+  @include section-styles;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.mapFrame {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+}
+
+.mapButton {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem; /* Space between button and directions */
+  background-color: #03C75A; /* Naver Green */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #02b350;
+  }
+}
+
+.kakaoMapButton {
+  background-color: #FEE500; /* Kakao Yellow */
+  color: #3C1E1E; /* Dark text for contrast */
+
+  &:hover {
+    background-color: darken(#FEE500, 5%);
+  }
+}
+
+.mapButtonContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.directions {
+  text-align: left;
+}
+
+.directionItem {
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+
+  p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+  }
+}

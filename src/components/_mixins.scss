@@ -1,0 +1,9 @@
+@mixin section-styles {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

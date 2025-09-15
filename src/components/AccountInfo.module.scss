@@ -1,0 +1,63 @@
+@import './_mixins.scss';
+
+.accountInfoSection {
+  @include section-styles;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .infoMessage {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+}
+
+.accountDetails {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+
+.accountItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+
+  p {
+    margin: 0;
+  }
+
+  .accountNumber {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+
+    &:hover {
+      background-color: #e9e9e9;
+    }
+  }
+}

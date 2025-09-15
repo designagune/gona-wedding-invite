@@ -1,0 +1,69 @@
+@import './_mixins.scss';
+
+.calendarSection {
+  @include section-styles;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.dayName, .dateCell {
+  padding: 0.5rem 0.25rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.dayName {
+  font-weight: bold;
+
+  /* Sunday */
+  &:first-child {
+    color: #d9534f;
+  }
+
+  /* Saturday */
+  &:last-child {
+    color: #428bca;
+  }
+}
+
+.dateCell {
+  /* Sunday */
+  &:nth-child(7n + 1) {
+    color: #d9534f;
+  }
+
+  /* Saturday */
+  &:nth-child(7n) {
+    color: #428bca;
+  }
+}
+
+.weddingDay {
+  background-color: #fdf4f4;
+  border-radius: 50%;
+  font-weight: bold;
+  position: relative;
+  color: #d9534f;
+  border: 1px solid #f1bebe;
+
+  .heart {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: #d9534f;
+  }
+}
