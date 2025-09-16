@@ -1,4 +1,4 @@
-@import './_mixins.scss';
+@import "./_mixins.scss";
 
 .locationSection {
   @include section-styles;
@@ -12,7 +12,7 @@
 
 .mapFrame {
   width: 100%;
-  height: 300px;
+  height: 309px;
   margin-bottom: 1rem;
   border: 1px solid #ddd;
 }
@@ -22,7 +22,7 @@
   width: 100%;
   padding: 1rem;
   margin-bottom: 1.5rem; /* Space between button and directions */
-  background-color: #03C75A; /* Naver Green */
+  background-color: #03c75a; /* Naver Green */
   color: white;
   text-decoration: none;
   text-align: center;
@@ -37,11 +37,11 @@
 }
 
 .kakaoMapButton {
-  background-color: #FEE500; /* Kakao Yellow */
-  color: #3C1E1E; /* Dark text for contrast */
+  background-color: #fee500; /* Kakao Yellow */
+  color: #3c1e1e; /* Dark text for contrast */
 
   &:hover {
-    background-color: darken(#FEE500, 5%);
+    background-color: darken(#fee500, 5%);
   }
 }
 

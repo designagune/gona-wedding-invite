@@ -20,10 +20,10 @@ const Intro = () => {
 
         <div className={styles.names}>
           <p>
-            김영수 · 박은경의 아들 <strong>건</strong>
+            김용균 · 차정숙의 아들 <strong>관중</strong>
           </p>
           <p>
-            이민준 · 최지아의 딸 <strong>하나</strong>
+            이진호 · 이은경의 딸 <strong>유진</strong>
           </p>
         </div>
 
