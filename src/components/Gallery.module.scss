@@ -3,10 +3,21 @@
 .gallerySection {
   @include section-styles;
 
-  h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+  .galleryTitle {
+    padding-bottom: 1.875rem;
+    color: #b27085;
+
+    span {
+      opacity: 0.6;
+      font-family: "Crimson Pro", serif;
+    }
+
+    .galleryHead {
+      letter-spacing: 0em;
+      font-size: 1.4rem;
+      -webkit-text-stroke: 0.2px;
+      line-height: 2;
+    }
   }
 }
 

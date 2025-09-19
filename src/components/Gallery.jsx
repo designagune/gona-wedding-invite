@@ -23,7 +23,10 @@ const Gallery = () => {
 
   return (
     <div className={styles.gallerySection}>
-      <h3>우리의 순간들</h3>
+      <div className={styles.galleryTitle}>
+        <span>GALLERY</span>
+        <h2 className={styles.galleryHead}>웨딩 갤러리</h2>
+      </div>
       <div className={styles.galleryGrid}>
         {images.map((src, index) => (
           <div

@@ -1,4 +1,4 @@
-@import './_mixins.scss';
+@import "./_mixins.scss";
 
 .calendarSection {
   @include section-styles;
@@ -6,19 +6,40 @@
   h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    // margin-bottom: 1.5rem;
+  }
+
+  .calendarTime {
+    padding: 0.5rem 0;
+    letter-spacing: 0px;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    color: #332e2e;
+    margin-top: 7px;
+    -webkit-text-stroke: 0.2px;
   }
 }
+
+// .divider {
+//   margin: 1.5rem auto;
+//   width: 75%;
+//   height: 1px;
+//   background-color: #eee;
+// }
 
 .calendarGrid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 5px;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 1.25rem auto 0;
+  padding: 0.875rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
-.dayName, .dateCell {
+.dayName,
+.dateCell {
   font-size: 0.9rem;
   text-align: center;
   width: 40px;
@@ -70,5 +91,24 @@
     transform: translateX(-50%);
     font-size: 0.8rem; /* Slightly larger */
     color: #d9534f;
+  }
+}
+
+.countdown {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+
+  p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
   }
 }

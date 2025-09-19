@@ -1,13 +1,17 @@
-@import './_reset.scss';
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import "./_reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+html {
+  font-size: clamp(12px, 2.5vw, 16px);
+}
 
 body {
   margin: 0;
-  font-family: 'Gowun Dodum', sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
-  background-color: #fdfdfd;
+  background-color: #efefef;
 }
 
 * {

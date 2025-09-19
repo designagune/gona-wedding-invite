@@ -8,7 +8,10 @@ const Location = () => {
 
   return (
     <div className={styles.locationSection}>
-      <h3>오시는 길</h3>
+      <div className={styles.locationTitle}>
+        <span>LOCATION</span>
+        <h2 className={styles.locationHead}>오시는 길</h2>
+      </div>
       <div className={styles.mapFrame}>
         <KakaoMap />
       </div>
