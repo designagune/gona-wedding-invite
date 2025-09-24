@@ -39,12 +39,13 @@ const Location = () => {
         <div className={styles.directionItem}>
           <h4>지하철</h4>
           <p>4호선 고잔역 2번 출구</p>
-          <p>(2번 출구 앞에서 셔틀버스 수시 운행)</p>
+          <p>(셔틀버스 5분~7분 간격 수시운행 / 도보 15~20분)</p>
         </div>
         <div className={styles.directionItem}>
           <h4>버스</h4>
           <p>안산 문화숲의 광장 하차: 88번</p>
           <p>동남레이크빌 하차: 99-1번, 3100번</p>
+          <p>대림호수공원아파트 하차 : 77, 98, 3</p>
         </div>
         <div className={styles.directionItem}>
           <h4>자가용</h4>

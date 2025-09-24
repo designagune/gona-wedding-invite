@@ -1,0 +1,23 @@
+@import "./_mixins.scss";
+
+.footer {
+  @include section-styles;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+
+  .closingMessage {
+    font-family: "Crimson Pro", serif;
+    font-size: 1.2rem;
+    color: #555; // Darkened for contrast
+    margin-bottom: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.85rem;
+    color: #555; // Darkened for contrast
+    margin: 0;
+  }
+}
