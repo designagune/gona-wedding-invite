@@ -23,7 +23,7 @@ const Location = () => {
           className={`${styles.mapButton} ${styles.kakaoMapButton}`}
           style={{ flex: 1 }}
         >
-          카카오 맵
+          <span>카카오 맵</span>
         </a>
         <a
           href={naverMapUrl}
@@ -32,20 +32,23 @@ const Location = () => {
           className={styles.mapButton}
           style={{ flex: 1 }}
         >
-          네이버 지도
+          <span>네이버 지도</span>
         </a>
       </div>
       <div className={styles.directions}>
         <div className={styles.directionItem}>
           <h4>지하철</h4>
-          <p>4호선 고잔역 2번 출구</p>
-          <p>(셔틀버스 5분~7분 간격 수시운행 / 도보 15~20분)</p>
+          <p>4호선 중앙역, 고잔역 2번 출구 (도보 15분)</p>
+          <p>
+            4호선 고잔역 2번 출구 횡단보도 앞 - 셔틀버스
+            <br />
+            (5분~7분 간격 수시운행)
+          </p>
         </div>
         <div className={styles.directionItem}>
           <h4>버스</h4>
-          <p>안산 문화숲의 광장 하차: 88번</p>
-          <p>동남레이크빌 하차: 99-1번, 3100번</p>
-          <p>대림호수공원아파트 하차 : 77, 98, 3</p>
+          <p>안산문화숲의광장 하차: 10, 88, 123</p>
+          <p>동남레이크빌 하차: 77, 98, 99-1, 314, 3100</p>
         </div>
         <div className={styles.directionItem}>
           <h4>자가용</h4>

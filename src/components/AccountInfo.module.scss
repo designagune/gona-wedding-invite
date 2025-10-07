@@ -1,15 +1,16 @@
-@import './_mixins.scss';
+@import "./_mixins.scss";
 
 .accountInfoSection {
   @include section-styles;
 
   .accountInfoTitle {
     padding-bottom: 1.875rem;
-    color: #b27085;
+    color: #7cb342;
 
     span {
       opacity: 0.6;
       font-family: "Crimson Pro", serif;
+      letter-spacing: 3px;
     }
 
     .accountInfoHead {
@@ -93,14 +94,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #f9f9f9;
+  background-color: #dceadb;
   cursor: pointer;
-  font-weight: bold;
   font-size: 1.1rem;
-  color: #333;
+  color: #000;
 
   &:hover {
-    background-color: #f0f0f0;
+    background-color: #d0e1cf;
   }
 
   .toggleIcon {

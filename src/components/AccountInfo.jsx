@@ -54,12 +54,12 @@ const AccountInfo = () => {
               openAccordion === "groom" ? styles.open : ""
             }`}
           >
-            <p className={styles.accountPerson}>신랑 김관중</p>
-            {renderAccountItem("신랑 김관중", "OO은행 123-456-789012")}
-            <p className={styles.accountPerson}>신랑 아버님</p>
-            {renderAccountItem("김철수", "OO은행 111-222-333333")}
-            <p className={styles.accountPerson}>신랑 어머님</p>
-            {renderAccountItem("이영희", "OO은행 444-555-666666")}
+            {/* <p className={styles.accountPerson}>신랑 김관중</p> */}
+            {renderAccountItem("김관중", "OO은행 123-456-789012")}
+            {/* <p className={styles.accountPerson}>신랑 아버님</p> */}
+            {renderAccountItem("김용균", "OO은행 111-222-333333")}
+            {/* <p className={styles.accountPerson}>신랑 어머님</p> */}
+            {renderAccountItem("차정숙", "OO은행 444-555-666666")}
           </div>
         </div>
 
@@ -79,12 +79,12 @@ const AccountInfo = () => {
               openAccordion === "bride" ? styles.open : ""
             }`}
           >
-            <p className={styles.accountPerson}>신부 이유진</p>
-            {renderAccountItem("신부 이유진", "XX은행 987-654-321098")}
-            <p className={styles.accountPerson}>신부 아버님</p>
-            {renderAccountItem("박민수", "XX은행 777-888-999999")}
-            <p className={styles.accountPerson}>신부 어머님</p>
-            {renderAccountItem("최지영", "XX은행 000-111-222222")}
+            {/* <p className={styles.accountPerson}>신부 이유진</p> */}
+            {renderAccountItem("이유진", "XX은행 987-654-321098")}
+            {/* <p className={styles.accountPerson}>신부 아버님</p> */}
+            {renderAccountItem("이진호", "XX은행 777-888-999999")}
+            {/* <p className={styles.accountPerson}>신부 어머님</p> */}
+            {renderAccountItem("이은경", "XX은행 000-111-222222")}
           </div>
         </div>
       </div>

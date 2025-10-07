@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Serif+KR&display=swap");
 
 html {
-  font-size: clamp(12px, 2.5vw, 16px);
+  font-size: clamp(14.52px, 3.03vw, 19.36px);
 }
 
 body {
@@ -16,4 +16,5 @@ body {
 
 * {
   box-sizing: border-box;
+  -webkit-text-stroke: 0.2px;
 }

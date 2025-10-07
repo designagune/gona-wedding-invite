@@ -5,11 +5,12 @@
 
   .guestbookTitle {
     padding-bottom: 1.875rem;
-    color: #b27085;
+    color: #7cb342;
 
     span {
       opacity: 0.6;
       font-family: "Crimson Pro", serif;
+      letter-spacing: 3px;
     }
 
     .guestbookHead {
@@ -49,7 +50,7 @@
 
   button {
     align-self: flex-end;
-    background-color: #333;
+    background-color: #7eb27a;
     color: white;
     border: none;
     padding: 0.8em 1.5em;
@@ -59,7 +60,7 @@
     font-size: 0.95rem;
 
     &:hover {
-      background-color: #555;
+      background-color: #6a9f66;
     }
   }
 }
@@ -92,7 +93,8 @@
 }
 
 .entryName {
-  font-weight: bold;
+  color: #000;
+  font-size: 1.15rem;
 }
 
 .entryDate {
@@ -120,4 +122,17 @@
     color: #333;
     text-decoration: underline;
   }
+}
+
+.showMoreButton {
+  width: 100%;
+  padding: 0.8em 1.5em;
+  margin-top: 1rem;
+  background-color: #7eb27a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #fff;
 }

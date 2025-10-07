@@ -35,6 +35,11 @@
       padding: 0 5px;
       font-size: 1.25rem;
       -webkit-text-stroke: 0.2px;
+
+      &.gona {
+        // 김윤서가 1px 모자르다고해서 추가함;;
+        padding-right: 4px;
+      }
     }
   }
 
@@ -88,11 +93,12 @@
 }
 
 .invitationTitle {
-  color: #b27085;
+  color: #7cb342;
 
   span {
     opacity: 0.6;
     font-family: "Crimson Pro", serif;
+    letter-spacing: 3px;
   }
 
   .invitationHead {
@@ -105,7 +111,7 @@
 
 .invitationMessage {
   margin-top: 2.5rem;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   color: #555;
 }

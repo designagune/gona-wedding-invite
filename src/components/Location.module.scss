@@ -5,11 +5,12 @@
 
   .locationTitle {
     padding-bottom: 1.875rem;
-    color: #b27085;
+    color: #7cb342;
 
     span {
       opacity: 0.6;
       font-family: "Crimson Pro", serif;
+      letter-spacing: 3px;
     }
 
     .locationHead {
@@ -23,7 +24,7 @@
 
 .mapFrame {
   width: 100%;
-  height: 309px;
+  height: 362px;
   margin-bottom: 1rem;
   border: 1px solid #ddd;
 }
@@ -32,27 +33,43 @@
   display: inline-block;
   width: 100%;
   padding: 1rem;
-  margin-bottom: 1.5rem; /* Space between button and directions */
-  background-color: #03c75a; /* Naver Green */
+  padding-left: 0.8rem;
+  margin-bottom: 1.5rem;
   color: white;
   text-decoration: none;
   text-align: center;
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-family: NotoSans;
   border-radius: 8px;
-  transition: background-color 0.2s;
+  border: 1px solid #eaeaea;
+  color: #000;
 
-  &:hover {
-    background-color: #02b350;
+  span {
+    display: inline-block;
+    padding-left: 24px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      top: 50%;
+      left: 0;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: url("../assets/images/icon_navermap.png") center
+        center/contain no-repeat;
+
+      transform: translateY(-50%);
+    }
   }
 }
 
 .kakaoMapButton {
-  background-color: #fee500; /* Kakao Yellow */
-  color: #3c1e1e; /* Dark text for contrast */
-
-  &:hover {
-    background-color: darken(#fee500, 5%);
+  span {
+    &::before {
+      background: url("../assets/images/icon_kakaonavi.png") center
+        center/contain no-repeat;
+    }
   }
 }
 

@@ -21,7 +21,7 @@ const Calendar = () => {
   });
 
   useEffect(() => {
-    const weddingDate = new Date("2025-11-23T15:40:00");
+    const weddingDate = new Date("2025-11-23T15:50:00");
 
     const timer = setInterval(() => {
       const now = new Date();
@@ -51,7 +51,7 @@ const Calendar = () => {
       <h3>
         {year}.{month}.{weddingDay}
       </h3>
-      <div className={styles.calendarTime}>일요일 오후 3시 40분</div>
+      <div className={styles.calendarTime}>일요일 오후 3시 50분</div>
       <div className={styles.divider}></div>
       <div className={styles.calendarGrid}>
         {days.map((day) => (
@@ -72,7 +72,7 @@ const Calendar = () => {
         ))}
       </div>
       <div className={styles.countdown}>
-        <p>부부가 되기까지 남은 시간</p>
+        <p>부부가 되기까지 남은 날짜</p>
         <div className={styles.timer}>
           {timeLeft.days}일 {timeLeft.hours}시간 {timeLeft.minutes}분{" "}
           {timeLeft.seconds}초

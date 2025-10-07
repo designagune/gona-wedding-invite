@@ -86,6 +86,12 @@ const Guestbook = () => {
     setCurrentItemToDelete(null);
   };
 
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  const handleShowMore = () => {
+    setVisibleCount((prevCount) => prevCount + 6);
+  };
+
   const formatDate = (timestamp) => {
     if (!timestamp) return "";
     const date = timestamp.toDate();
@@ -113,7 +119,7 @@ const Guestbook = () => {
           />
           <input
             type="password"
-            placeholder="비밀번호 (삭제 시 필요)"
+            placeholder="비밀번호"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             maxLength="20"
@@ -121,7 +127,7 @@ const Guestbook = () => {
         </div>
         <div className={styles.formGroup}>
           <textarea
-            placeholder="축하 메시지를 남겨주세요."
+            placeholder="축하 메시지를 남겨주세요. (200자 이내)"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             maxLength="200"
@@ -131,7 +137,7 @@ const Guestbook = () => {
       </form>
 
       <div className={styles.guestbookList}>
-        {messages.map((msg) => (
+        {messages.slice(0, visibleCount).map((msg) => (
           <div key={msg.id} className={styles.guestbookEntry}>
             <div className={styles.entryHeader}>
               <span className={styles.entryName}>{msg.name}</span>
@@ -151,6 +157,12 @@ const Guestbook = () => {
           </div>
         ))}
       </div>
+
+      {visibleCount < messages.length && (
+        <button className={styles.showMoreButton} onClick={handleShowMore}>
+          더보기
+        </button>
+      )}
 
       <PasswordModal
         isOpen={isModalOpen}
