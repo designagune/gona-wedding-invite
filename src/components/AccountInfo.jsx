@@ -21,7 +21,7 @@ const AccountInfo = () => {
 
   const renderAccountItem = (name, accountNumber) => (
     <div className={styles.accountItem}>
-      <p>{name}</p>
+      <p className={styles.accountName}>{name}</p>
       <p className={styles.accountNumber}>{accountNumber}</p>
       <button onClick={() => handleCopy(accountNumber)}>복사</button>
     </div>
@@ -55,11 +55,11 @@ const AccountInfo = () => {
             }`}
           >
             {/* <p className={styles.accountPerson}>신랑 김관중</p> */}
-            {renderAccountItem("김관중", "OO은행 123-456-789012")}
+            {renderAccountItem("김관중", "하나은행 01027791068207")}
             {/* <p className={styles.accountPerson}>신랑 아버님</p> */}
-            {renderAccountItem("김용균", "OO은행 111-222-333333")}
+            {renderAccountItem("김용균", "농협은행 589-12-023830")}
             {/* <p className={styles.accountPerson}>신랑 어머님</p> */}
-            {renderAccountItem("차정숙", "OO은행 444-555-666666")}
+            {renderAccountItem("차정숙", "농협은행 356-1533-2757-13")}
           </div>
         </div>
 
@@ -80,11 +80,11 @@ const AccountInfo = () => {
             }`}
           >
             {/* <p className={styles.accountPerson}>신부 이유진</p> */}
-            {renderAccountItem("이유진", "XX은행 987-654-321098")}
+            {renderAccountItem("이유진", "신한은행 608-11-012800")}
             {/* <p className={styles.accountPerson}>신부 아버님</p> */}
-            {renderAccountItem("이진호", "XX은행 777-888-999999")}
+            {renderAccountItem("이은경\n(이진호)", "농협은행 356-0605-8150-83")}
             {/* <p className={styles.accountPerson}>신부 어머님</p> */}
-            {renderAccountItem("이은경", "XX은행 000-111-222222")}
+            {renderAccountItem("이은경", "국민은행 247-24-0015-847")}
           </div>
         </div>
       </div>

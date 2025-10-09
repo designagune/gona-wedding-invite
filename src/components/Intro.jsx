@@ -1,15 +1,12 @@
 import React from "react";
 import styles from "./Intro.module.scss";
+import visualImage from "../assets/images/visual.jpg";
 
 const Intro = () => {
   return (
     <div className={styles.introSection}>
       <div className={styles.intro}>
-        <img
-          src="https://images.theirmood.com/resources/87339/card/AZuQ3rXlpi/SquMBTFJQm.jpg?f=webp&w=1280"
-          alt="Wedding"
-          className={styles.mainPhoto}
-        />
+        <img src={visualImage} alt="Wedding" className={styles.mainPhoto} />
       </div>
 
       <div className={styles.introText}>

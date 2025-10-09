@@ -1,26 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Gallery.module.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
 
-const Gallery = () => {
-  const images = Array.from(
-    { length: 9 },
-    (_, i) => `https://placehold.co/600x600?text=Photo+${i + 1}`
-  );
-
-  const [modalOpen, setModalOpen] = useState(false);
-  const [initialSlide, setInitialSlide] = useState(0);
-
-  const openModal = (index) => {
-    setInitialSlide(index);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
+const Gallery = ({ images, onImageClick }) => {
   return (
     <div className={styles.gallerySection}>
       <div className={styles.galleryTitle}>
@@ -32,45 +13,12 @@ const Gallery = () => {
           <div
             key={index}
             className={styles.galleryItem}
-            onClick={() => openModal(index)}
+            onClick={() => onImageClick(index)}
           >
             <img src={src} alt={`Wedding photo ${index + 1}`} />
           </div>
         ))}
       </div>
-
-      {modalOpen && (
-        <div className={styles.modal} onClick={closeModal}>
-          <div
-            className={styles.modalContent}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <span className={styles.closeButton} onClick={closeModal}>
-              &times;
-            </span>
-            <Swiper
-              modules={[Navigation, Pagination]}
-              navigation
-              pagination={{ clickable: true }}
-              loop
-              initialSlide={initialSlide}
-              spaceBetween={50}
-              slidesPerView={1}
-              className={styles.swiperContainer}
-            >
-              {images.map((src, index) => (
-                <SwiperSlide key={index}>
-                  <img
-                    src={src}
-                    alt={`Wedding photo ${index + 1}`}
-                    className={styles.swiperImage}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

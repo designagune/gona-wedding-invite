@@ -54,9 +54,17 @@
     margin: 0;
   }
 
+  .accountName {
+    width: 56px;
+    text-align: left;
+    word-break: keep-all;
+  }
+
   .accountNumber {
+    width: 161px;
     font-size: 0.9rem;
     color: #555;
+    text-align: left;
   }
 
   button {
@@ -117,6 +125,7 @@
   padding: 0 1.5rem;
   max-height: 0;
   overflow: hidden;
+  color: #000;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 
   &.open {
